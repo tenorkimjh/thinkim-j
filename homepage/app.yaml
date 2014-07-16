@@ -1,0 +1,19 @@
+application: thinkimj
+version: 1
+runtime: php
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  static_files: \1
+  upload: (.*\.(bmp|gif|ico|jpeg|jpg|png))
+
+- url: /static/
+  static_dir: static/
+
+- url: /(.*\.(php|html))
+  script: \1
+
+- url: /.*
+  script: myhome.html

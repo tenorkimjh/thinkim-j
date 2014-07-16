@@ -1,0 +1,32 @@
+body {
+	margin:auto;
+	width:450px;
+	float:center;
+}
+table {
+	width:450px;
+	background-color : black;
+	border : 2px solid black;
+	color:white;
+}
+#profilepic{
+	width : 150px;
+	height : 150px;
+	float : left;
+}
+img{
+	
+	height:93%;
+	border:1px solid black;
+	border-radius:10px;
+	margin-top:5px;
+	margin-left:5px;
+	margin-bottom:5px;
+}
+
+#hd {
+	margin-left:5px;
+}
+li {
+	margin-top:10px;
+}
