@@ -5,9 +5,9 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
-  static_files: \1
-  upload: (.*\.(bmp|gif|ico|jpeg|jpg|png))
+- url: /(.*\.(gif|png|jpg))$
+  static_files: static/\1
+  upload: static/.*\.(gif|png|jpg)$
 
 - url: /static/
   static_dir: static/
